@@ -153,7 +153,7 @@ h4 {
     width: 70%;
     margin-left: 15%; }
 
-.ghost {
+.santaface {
   animation: float 3s ease-out infinite; }
 
 @keyframes float {
@@ -654,102 +654,181 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem; }
+  margin: 2rem;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1); }
   @media only screen and (max-width: 37.5em) {
     .main {
       grid-row: 1/2;
       margin-top: 2rem; } }
 
-.overlay {
+.content {
   position: relative;
-  margin: auto;
-  margin-top: 2rem;
-  width: 800px;
-  height: 500px;
-  transform: all 5s ease;
-  border-radius: 5px;
-  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
-  align-self: center;
-  justify-self: center;
-  background-color: #368cbf; }
+  max-height: 100vh;
+  transform: scale(1); }
 
-.overlay .after {
+.what {
+  cursor: pointer;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  display: none;
-  transform: all 5s ease; }
-
-.overlay:hover .after {
-  display: block;
-  background: rgba(0, 0, 0, 0.4);
-  transform: all 5s ease; }
-
-.image-art {
-  height: 100%;
-  width: 100%;
-  border-radius: 5px; }
-
-.image-text {
-  position: absolute;
-  font-size: 6rem;
-  line-height: 6rem;
-  font-weight: 300;
-  text-align: center;
-  width: 60%;
-  height: 30%;
-  color: white;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  transition: all .2s ease;
-  z-index: 2000; }
+  height: 80px;
+  width: 188px;
+  top: 270px;
+  left: 30px;
+  z-index: 15;
+  font-size: 2rem;
+  color: white;
+  padding: 4px;
+  line-height: 2.6rem;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #378b29;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1); }
 
-.overlay:hover .image-text {
-  display: flex; }
+.what:hover {
+  transform: scale(1.02); }
 
-@media only screen and (max-width: 62.5em) {
-  .overlay {
-    width: 600px;
-    height: 375px; }
-  .image-text {
-    width: 300;
-    height: 150;
-    font-size: 7rem; } }
+.what:active {
+  transform: scale(1); }
 
-@media only screen and (max-width: 50em) {
-  .overlay {
-    width: 550px;
-    height: 350px; }
-  .image-text {
-    width: 300;
-    height: 150;
-    font-size: 5rem; } }
+.santa {
+  position: absolute;
+  height: 140px;
+  width: 140px;
+  z-index: 5;
+  top: 100px;
+  left: 55px; }
 
-@media only screen and (max-width: 37.5em) {
-  .overlay {
-    width: 360px;
-    height: 220px;
-    font-size: 5rem; }
-  .image-text {
-    width: 300;
-    height: 150;
-    font-size: 5rem; } }
+.santa img {
+  height: 100%;
+  width: 100%; }
 
-@media only screen and (max-width: 20em) {
-  .overlay {
-    width: 310px;
-    height: 200px; }
-  .image-text {
-    width: 300;
-    height: 150;
-    font-size: 4rem; } }
+.santavanisher {
+  animation: goaway 3s forwards; }
+
+@keyframes goaway {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.santa:hover {
+  transform: scale(1.02); }
+
+.santa:active {
+  transform: scale(1); }
+
+.ghost {
+  cursor: pointer;
+  position: absolute;
+  height: 400px;
+  width: 440px;
+  z-index: 10;
+  top: 30px;
+  left: 2000px;
+  opacity: .8; }
+
+.animate {
+  animation: floaty 4s forwards; }
+
+@keyframes floaty {
+  0% {
+    transform: translateX(0px) scale(1); }
+  50% {
+    transform: translateX(-1850px) scaleX(-1); }
+  100% {
+    transform: translateX(-1570px) scale(1); } }
+
+.ghost:hover {
+  opacity: .9; }
+
+.ghost:active {
+  opacity: .7; }
+
+.ghost img {
+  height: 100%;
+  width: 100%; }
+
+.vanish {
+  display: none; }
+
+.tree {
+  cursor: pointer;
+  position: relative;
+  width: 800px;
+  height: 800px;
+  background-color: #ff0000;
+  border-radius: 8px; }
+
+.tree img {
+  height: 100%;
+  width: 100%; }
+
+.deco {
+  position: absolute;
+  width: 80px;
+  height: 80px; }
+
+#id1 {
+  top: 30px;
+  left: 350px;
+  z-index: 100; }
+
+#id2 {
+  top: 180px;
+  left: 300px; }
+
+#id3 {
+  top: 180px;
+  left: 400px; }
+
+#id4 {
+  top: 320px;
+  left: 230px; }
+
+#id5 {
+  top: 380px;
+  left: 350px; }
+
+#id6 {
+  top: 320px;
+  left: 470px; }
+
+#id7 {
+  top: 460px;
+  left: 170px; }
+
+#id8 {
+  top: 520px;
+  left: 290px; }
+
+#id9 {
+  top: 520px;
+  left: 420px; }
+
+#id10 {
+  top: 460px;
+  left: 530px; }
+
+#id11 {
+  top: 620px;
+  left: 100px; }
+
+#id12 {
+  top: 680px;
+  left: 220px; }
+
+#id13 {
+  top: 620px;
+  left: 350px; }
+
+#id14 {
+  top: 680px;
+  left: 470px; }
+
+#id15 {
+  top: 620px;
+  left: 590px; }
 
 .links {
   grid-row: 3/4;

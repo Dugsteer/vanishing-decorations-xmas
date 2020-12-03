@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fun, free  online sports Christmas flashcards for learning English vocabulary">
+    <meta name="description" content="A fun, free  online vanishing decorations Christmas game for learning English vocabulary">
     <meta name="keywords" content="Christmas flashcards ESL online">
-    <title>Christmas Flashcards</title>
+    <title>Christmas Tree Game</title>
     <link rel="icon" type="image/png"
     href="favicon.png";
   />
@@ -15,7 +15,7 @@
 <body>
 
   <div class="loader-div" id="loaderDiv" onload = "checkForTop();">
-    <div class="loader-container ghost">
+    <div class="loader-container santaface">
       <img src="img/santa.svg" alt=""> 
     </div>
     <div class="basediv"></div>
@@ -29,7 +29,7 @@
           </svg>    </a>
         <h3 class="nav-bar__title">Esl-Ology.Com</h3>
         <div class="nav-bar__title-page">
-          <span class="nav-bar__title-page-main" id="pageTitle">CHRISTMAS FLASHCARDS</span>
+          <span class="nav-bar__title-page-main" id="pageTitle">CHRISTMAS TREE GAME</span>
       </div>
       <div class="nav-bar__links">
         <a href="index.html" class="nav-bar__link link3">Home</a>
@@ -43,6 +43,8 @@
 
     <div id="wrapper" class="wrapper">
 
+
+
           
       <div class="sidebar-container" id="sidebar">
         <div data-include="sidebar.html">
@@ -53,32 +55,42 @@
           <div class="introduction__img" id="mainpic">
             <img src="img/tree-with-lights.png" onclick="kickball();" alt="decorative">
             <div id="ball" class="ball">
-            <img src="img/reindeer.png" alt="decorative">
+            <img src="img/XmasPast.png" alt="decorative">
             </div>
           </div>
           <div class="introduction__text">
-            <h1>WONDERFUL CHRISTMAS TIME</h1>
-            <p>'Twas the night before Christmas, <br>When all through the house <br> Not a creature was stirring <br>Except for a mouse  <br>The stockings were hung on the chimney with care <br>In the hopes that St. Nicholas soon would be there... <br><br><blockquote style="text-align: center; font-size: 1.4rem;">— Clement C Moore<i>The Night Before Christmas</i></blockquote>  </p>
+            <h1>BUT I'VE BEEN GOOD THIS YEAR...</h1>
+            <P>What a lovely tree, all decorated for Christmas! But hang on, who's this? Why, it's the ghost of Christmas Past come to destroy Christmas present! Can you tell what decoration he has just turned to a lump of coal? Click on the tree to start, and click on the ghost to make him cast his wicked spell...</P>
           </div>
         </div>
 
         <div class="main">
-          <div id="overlay" class="overlay">
-            <img id="image-art" class="image-art" src="img/wreath.jpg" alt="">
-            <div class="after">
+           <div class="content">
+              <div class="ghost"  onclick="loseOne()"><img src="img/XmasPast.png">
+              </div>
+              <div class="what" onclick="showItem()"><h3>Click to see what vanished</h3></div>
+              <d class="santa vanish" onclick="window.location.reload();"><img src="img/santa.svg" alt="">
+              </d>
+                <div class="tree" onclick = "startMe()">
+                    <img src="img/Bigtree1.png" alt="">
+                    <div class="deco" id="id1"><img src="img/star.svg"></div>
+                    <div class="deco" id="id2"><img src="img/star.svg"></div>
+                    <div class="deco" id="id3"><img src="img/star.svg"></div>
+                    <div class="deco" id="id4"><img src="img/star.svg"></div>
+                    <div class="deco" id="id5"><img src="img/star.svg"></div>
+                    <div class="deco" id="id6"><img src="img/star.svg"></div>
+                    <div class="deco" id="id7"><img src="img/star.svg"></div>
+                    <div class="deco" id="id8"><img src="img/star.svg"></div>
+                    <div class="deco" id="id9"><img src="img/star.svg"></div>
+                    <div class="deco" id="id10"><img src="img/star.svg"></div>
+                    <div class="deco" id="id11"><img src="img/star.svg"></div>
+                    <div class="deco" id="id12"><img src="img/star.svg"></div>
+                    <div class="deco" id="id13"><img src="img/star.svg"></div>
+                    <div class="deco" id="id14"><img src="img/star.svg"></div>
+                  <div class="deco" id="id15"><img src="img/star.svg"></div>
+              </div>
             </div>
-              <p id="image-text" class="image-text">wreath</p>
-          </div>
-          <div class="buttons">
-            <div class="buttons__icon" onclick="goBackwards()">
-              <img class="buttons__icon-img arrow1" src="img/right-arrow-red.png" alt="">
-            </div>
-              <p class="count" id="count">2/20</p>
-            <div class="buttons__icon" onclick="goForwards()">
-              <img class="buttons__icon-img arrow2" src="img/right-arrow-red.png" alt="">
-            </div>
-          </div>
-        </div>
+      </div> 
 
       <div class="links">
         <p class="links__text">
@@ -118,32 +130,50 @@
         }
       }
     preload(
-      "img/angel.jpg",
-    "img/bells.jpg",
-    "img/candles.jpg",
-    "img/candy-cane.jpg",
-    "img/christmas-card.jpg",
-    "img/christmas-dinner.jpg",
-    "img/christmas-tree.jpg",
-    "img/cracker.jpg",
-    "img/decorations.jpg",
-    "img/elf.jpg",
-    "img/fairy-lights.jpg",
-    "img/gingerbread-man.jpg",
-    "img/mistletoe.jpg",
-    "img/nativity.jpg",
-    "img/presents.jpg",
-    "img/reindeer.jpg",
-    "img/sack.jpg",
-    "img/santa.jpg",
-    "img/sleigh.png",
-    "img/snow-globe.jpg",
-    "img/snowball.jpg",
-    "img/snowflake.jpg",
-    "img/star.jpg",
-    "img/stockings.jpg",
-    "img/wreath.jpg",
-    "img/merry-christmas.jpg"
+      "angel.svg",
+"bell.svg",
+"Bigtree.png",
+"Bigtree1.png",
+"BingoXmas.jpg",
+"cake.svg",
+"camel.svg",
+"candle.svg",
+"candy.svg",
+"card.svg",
+"choir.svg",
+"coal.svg",
+"decoration.svg",
+"elf.svg",
+"food.svg",
+"gingerbread.svg",
+"hat.svg",
+"holly.svg",
+"jumper.svg",
+"kings.svg",
+"lights.svg",
+"MatchingXmas.jpg",
+"mitten.svg",
+"present.svg",
+"reindeer.svg",
+"sack.svg",
+"santa.svg",
+"skating.svg",
+"skiing.svg",
+"sleigh.svg",
+"snow-globe.svg",
+"snowball.svg",
+"snowflake.svg",
+"snowman.svg",
+"star.svg",
+"stocking.svg",
+"tag.svg",
+"toys.svg",
+"tree-with-lights.png",
+"wreath.svg",
+"xmas-day.svg",
+"XmasPast.png",
+"yt_logo_rgb_light.png",
+
     )
       //--><!]]>
     </script>
