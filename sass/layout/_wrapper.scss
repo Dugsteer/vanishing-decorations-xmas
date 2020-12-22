@@ -20,10 +20,12 @@
 
   @media only screen and (max-width:$bp-medium){
     grid-template-columns: 0 1fr;
+    width: 100vw;
   }
 
   @media only screen and (max-width: $bp-small){
     width: 100vw;
+    grid-template-rows: 700px 1fr 1fr;
     
   }
 }
